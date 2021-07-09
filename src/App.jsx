@@ -129,6 +129,9 @@ class App extends React.Component {
             username: "",
             message: "",
             todos: [
+                // { username: "Harley Quinn", message: "Mr! J! *heart eyes*" },
+                // { username: "Joker", message: "Why so serious?" },
+                // { username: "Bruce Wayne", message: "I AM BATMAN!" },
                 { id: uuidv4(), username: "Harley Quinn", message: "Mr! J! *heart eyes*" },
                 { id: uuidv4(), username: "Joker", message: "Why so serious?" },
                 { id: uuidv4(), username: "Bruce Wayne", message: "I AM BATMAN!" },
@@ -141,9 +144,11 @@ class App extends React.Component {
         e.preventDefault();
         this.setState({
             username: "",
+            message: "",
             todos: [
                 ...this.state.todos,
-                { id: uuidv4(), username: this.state.username },
+                // { username: this.state.username, message: this.state.message},
+                { id: uuidv4(), username: this.state.username, message: this.state.message},
             ]
         });
     }
