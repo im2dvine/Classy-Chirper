@@ -155,8 +155,8 @@ class App extends React.Component {
 
     render() {
         return (
-            <main className="container display-flex">
-                <section className="row justify-content-center mt-5">
+            <main className="container">
+                <section className="row justify-content-center align-items-center mt-5">
                     <div className="col-md-7">
                         <form className="form-group">
                             {/* <label> username and message </label> */}
